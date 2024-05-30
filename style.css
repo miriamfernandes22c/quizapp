@@ -149,8 +149,23 @@ background: var(--bg-html) ;
         margin-block: 81px;
     }
 
+    .tema{
+        gap: 16px;
+    }
+
     .tema img {
-        
+        width: 24px;
+    }
+
+    .tema button {
+        width: 48px;
+        height: 28PX;
+    }
+
+    .tema button div {
+        width: 20px;
+        height: 20px;
+
     }
     
 
