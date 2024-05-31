@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css">
     <title>Quiz App</title>
 </head>
 <body>
@@ -11,68 +15,61 @@
             <div class="assunto_icone">
                 <img src="../../assets/images/icon-accessibility.svg" alt="ícone da Acessibilidade">
             </div>
-
             <h1>Acessibilidade</h1>
         </div>
         <div class="tema">
             <img src="../../assets/images/icon-sun-dark.svg" alt="">
             <button>
                 <div></div>  
-              </button>
-              <img src="../../assets/images/icon-moon-dark.svg" alt="">
+            </button>
+            <img src="../../assets/images/icon-moon-dark.svg" alt="">
         </div> 
     </header>
 
     <main>
         <section class="pergunta">
-
             <p> Questão 6 de 10</p>
-
             <h2>  "Qual o significado de HTML?"</h2>
-
-            <div class="barra_progresso">
-
-            </div>
+            <div class="barra_progresso"></div>
+            <div></div>
         </section>
 
         <section class="alternativas">
             <form action="">
-       <label for="alternativa_a">
-        <input type="radio" id="alternativa A">
+                <label for="alternativa_A">
+                    <input type="radio" id="alternativa_A">
+                    <div>
+                        <span>A</span>
+                        Hyper Trainer Marking Language
+                    </div>
+                </label>
 
-        <div>
-     <spam>A</spam>
-     Hyper Trainer Marking Language
-        </div>
-       </label>
+                <label for="alternativa_B">
+                    <input type="radio" id="alternativa_B">
+                    <div>
+                        <span>B</span>
+                        Hyper Text Markup Language
+                    </div>
+                </label>
 
-       <label for="alternativa_b">
-        <input type="radio" id="alternativa_b">
+                <label for="alternativa_C">
+                    <input type="radio" id="alternativa_C">
+                    <div>
+                        <span>C</span>
+                        Hyper Text Markup Language
+                    </div>
+                </label>
 
-        <div>
-            <spam>B</spam>
-            Hyper Trainer Marking Language
-        </div>
-       </label>
+                <label for="alternativa_D">
+                    <input type="radio" id="alternativa_D">
+                    <div>
+                        <span>D</span>
+                        Hyper Text Markup Leveler
+                    </div>
+                </label>
 
-       <label for="alternativa_c">
-        <input type="radio" id="alternativa C">
-        <div>
-            <spam>C</spam>
-            Hyper Text Markup Language
-        </div>
-       </label>
-
-       <label for="alternativa_d">
-        <input type="radio" id="alternativa_d">
-
-        <div>
-            <spam>D</spam>
-            Hyper Text Markup Leveler
-        </div>
-         </form>
-
-         <button>Enviar</button>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 </body>
