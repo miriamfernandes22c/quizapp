@@ -235,6 +235,7 @@ main {
 
 .alternativas button:hover {
     background: var(--purple-hover);
+    cursor: pointer;
 }
   
 
