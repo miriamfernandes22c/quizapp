@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"Rubik", sans-serif;
-    -webkit-font-smoothing: antialiased;
+    font-family: "Rubik", sans-serif;
+    -webkit-font-snoothing: antialiased;
 }
 
 :root {
@@ -12,23 +12,23 @@
     --color-span: #626c7f;
     --purple: #a729f5;
     --purple-hover: rgba(167, 41, 245, 0.7);
+    --white: #fff;
+    --pontuacao-bg: #fff;
+    --shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+    --bg-html: #fff1e9;
+    --bg-css: #e0fdef;
+    --bg-javacript: #ebf0ff;
+    --bg-acessibilidade: #f6e7ff;
     --primary-text-color: #313e51;
     --secondary-text-color: #626c7f;
-    --pontuacao-bg: #fff;
-    --shadow: 0px 16px 48px 0px rgba(143, 160, 193, 0.14);
-    --bg-html: #fff1f9;
-    --bg-css: #e9fdef;
-    --bg-js: #ebf0ff;
-    --bg-acessibilidade: #f6e7ff;
-    --white: #fff;
-    --bg-mobile: url(../../assetes/images/pattern-background-mobile-ligt.svg);
+    --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-light.svg);
 }
 
 body.escuro {
     --bg-color: #313e51;
-    --color-span:#313e51;
-    --bg-mobile: url(./assetes/images/pattern-background-mobile-dark.svg);
+    --color-span: #313e51;
+    --bg-mobile: url(../../assets/images/pattern-background-mobile-dark.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-dark.svg);
     --primary-text-color: #fff;
     --secondary-text-color: #abc1e1;
@@ -37,7 +37,7 @@ body.escuro {
 }
 
 body {
-    height: 100vh;
+    height: 100svh;
     background: var(--bg-mobile) var(--bg-color);
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,7 +46,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 16px 2px;
+    padding: 16px 24px;
 }
 
 .assunto {
@@ -56,8 +56,8 @@ header {
 }
 
 .assunto_icone {
-    background: var(--bg-acessibilidade);
     width: 40px;
+    height: 40px;
     padding: 5px;
     border-radius: 5px;
 }
@@ -70,23 +70,22 @@ header {
     background: var(--bg-css);
 }
 
-.assunto_icone.js {
-    background: var(--bg-js);
+.assunto_icone.javascript {
+    background: var(--bg-javacript);
 }
 
 .assunto_icone.acessibilidade {
     background: var(--bg-acessibilidade);
 }
 
-
 .assunto_icone img {
-   width: 100%; 
+    width: 100%;
 }
 
 .assunto h1 {
     font-size: 18px;
     font-weight: 500;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
 }
 
 .tema {
@@ -107,6 +106,8 @@ header {
     border: 0;
     border-radius: 999px;
     padding: 4px;
+    display: flex;
+    cursor: pointer;
 }
 
 .tema button div {
@@ -114,16 +115,13 @@ header {
     width: 12px;
     height: 12px;
     border-radius: 999px;
-    padding: 4px;
-    display: flex;
-    cursor: pointer;
 }
 
 main {
     padding: 32px 24px;
 }
 
-main h2 {
+main h2{
     font-size: 40px;
     font-weight: 300;
     color: var(--primary-text-color);
@@ -134,8 +132,8 @@ main h2 strong {
     font-weight: 500;
 }
 
-.pontuação{
-    background:var(--pontuacao-bg) ;
+.pontuacao {
+    background: var(--pontuacao-bg);
     padding: 32px;
     display: flex;
     flex-direction: column;
@@ -146,13 +144,13 @@ main h2 strong {
     box-shadow: var(--shadow);
 }
 
-.pontuação strong {
-  font-size: 88px;
-  color: var(--primary-text-color);
-  font-weight: 500;
+.pontuacao strong {
+    font-size: 88px;
+    color: var(--primary-text-color);
+    font-weight: 500;
 }
 
-.pontuação p{
+.pontuacao p {
     color: var(--secondary-text-color);
     font-size: 18px;
 }
@@ -169,7 +167,6 @@ main button {
     font-weight: 500;
     transition: background 0.3s;
     box-shadow: var(--shadow);
-
 }
 
 main button:hover {
@@ -183,24 +180,25 @@ main button:hover {
         background-size: cover;
         background-repeat: no-repeat;
     }
-  header {
+
+
+    header {
         margin-block: 81px;
         max-width: 1160px;
         margin-inline: auto;
     }
 
     .assunto_icone {
-        width:56px; 
+        width: 56px;
         height: 56px;
-        padding: 8px; 
+        padding: 8px;
+    }
 
-     }
-
-     .assunto h1 {
+    .assunto h1 {
         font-size: 28px;
-     }
+    }
 
-    .tema{
+    .tema {
         gap: 16px;
     }
 
@@ -216,7 +214,6 @@ main button:hover {
     .tema button div {
         width: 20px;
         height: 20px;
-
     }
 
     main {
@@ -235,17 +232,16 @@ main button:hover {
         font-size: 64px;
     }
 
-    .pontuação {
+    .pontuacao {
         border-radius: 24px;
-        margin-bottom: 30px;
+        margin-bottom: 32px;
     }
 
-    .pontuação strong {
-    font-size: 144px;
-
+    .pontuacao strong {
+        font-size: 144px;
     }
 
-    .pontuação p {
+    .pontuacao p {
         font-size: 24px;
     }
 
