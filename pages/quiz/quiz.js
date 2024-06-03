@@ -118,7 +118,7 @@ function validarResposta() {
     botaoEnviar.innerText = "Finalizar"
     botaoEnviar.addEventListener("click", finalizar)
  } else {
-    otaoEnviar.addEventListener("click", proximaPergunta)
+    botaoEnviar.addEventListener("click", proximaPergunta)
  }
 
 
